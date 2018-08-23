@@ -1,0 +1,67 @@
+.container {
+    width: 85%;
+    height: 400px;
+    background-color: lightgray;
+    margin: 0 auto;
+    position: relative;
+    font-family: arial, helvetica, sans-serif;
+
+}
+
+#inputbox {
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+    background: linear-gradient(lightgray, gray);
+}
+
+#number1 {
+    font-size: 1.5em;
+    float: left;
+}
+
+#string {
+    font-size: 1.25em;
+    float: left;
+}
+
+#number2 {
+    font-size: 1.5em;
+    float: right;
+}
+
+#button {
+    clear: both;
+    font-size: 1.5em;
+    margin: auto 15%;
+}
+
+#button2 {
+    clear: both;
+    position: relative;
+    font-size: 1.25em;
+    margin: 0 auto;
+}
+
+#outputbox {
+    width: 90%;
+    height: 25%;
+    background-color: green;
+    margin: 0 auto;
+}
+
+#outputbox h2 {
+    font-size: 2em;
+    color: blue;
+    text-align: center;
+}
+
+#outputbox h1 {
+    height: 40%;
+    width: 25%;
+    margin: 15px auto;
+    background-color: white;
+    font-size: 3em;
+    text-align: center;
+    color: red;
+}
