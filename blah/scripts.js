@@ -7,24 +7,22 @@ $(document).ready(function () {
         var $element = $("div.boxItem")
         $element.eq(random % $element.length).addClass("on").trigger('classChange')
         
-        newFunction_1($element)
-        newFunction()
+        cleanUp($element)
+        activate()
         setTimeout(randomize, 3000)
       })()
       
 
-function newFunction_1($element) {
+function cleanUp($element) {
     $($("div.boxItem:not(.on)")).each(function () {
         var index = $(this).index()
-        console.log(index)
         $(this).attr('class', 'boxItem')
     })
 }
 
-function newFunction() {
+function activate() {
     $($("div.boxItem.on")).each(function () {
         var index = $(this).index()
-        console.log($(this) + index)
         $(this).attr('class', 'boxItem redBox')
         $(this).prev().attr('class', 'boxItem pinkBox')
         $(this).next().attr('class', 'boxItem pinkBox')
