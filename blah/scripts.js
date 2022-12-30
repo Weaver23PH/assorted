@@ -5,7 +5,7 @@ $(document).ready(function () {
         var random = Math.floor(Math.random() * 1000)
 
         var $element = $("div.boxItem")
-        $element.eq(random % $element.length).addClass("on").trigger('classChange')
+        $element.eq(random % $element.length).addClass("on")
         
         cleanUp($element)
         activate()
