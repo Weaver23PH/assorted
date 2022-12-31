@@ -3,19 +3,17 @@ $(document).ready(function () {
 
       (function randomize() {
         var random = Math.floor(Math.random() * 1000)
-
         var $element = $("div.boxItem")
         $element.eq(random % $element.length).addClass("on")
         
-        cleanUp($element)
+        cleanUp()
         activate()
         setTimeout(randomize, 3000)
       })()
       
 
-function cleanUp($element) {
+function cleanUp() {
     $($("div.boxItem:not(.on)")).each(function () {
-        var index = $(this).index()
         $(this).attr('class', 'boxItem')
     })
 }
